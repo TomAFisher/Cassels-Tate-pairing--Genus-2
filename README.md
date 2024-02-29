@@ -13,8 +13,7 @@ and
 
 https://www.dpmms.cam.ac.uk/~taf1000/papers/g2minimise.html
 
-Attaching the files "g2minimisation.m" and "genus2ctp.m" will make available the intrinsics "TwoDescentGenus2" 
-and "CasselsTatePairingGenus2". See the example at the top of "demo.m" for how to use these.
+Attaching the files "g2minimisation.m" and "genus2ctp.m" will make available the intrinsics "TwoDescentGenus2" and "CasselsTatePairingGenus2". See the example at the top of "demo.m" for how to use these.
 
 The files "g2ctp_examples.m" and "examples_LMFDB.m" contain examples that have been computed using this code.
 
