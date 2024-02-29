@@ -1513,7 +1513,7 @@ print "";
 // previously only known conditionally.
 
 // This list is taken from
-// https://www.lmfdb.org/api/g2c_curves/~mw_rank_proved=0
+// https://www.lmfdb.org/api/g2c_curves/?mw_rank_proved=0
 
 unproved := [
 "49471.a.49471.1", "57986.a.57986.1", "65563.d.65563.1",
