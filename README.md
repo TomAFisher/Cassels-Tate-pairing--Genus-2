@@ -4,11 +4,13 @@ MAGMA code for computing the Cassels-Tate pairing on the 2-Selmer group of a gen
 This MAGMA code accompanies the papers
 
 [1] T.A. Fisher and J. Yan, Computing the Cassels-Tate pairing on the 2-Selmer group of a genus 2 Jacobian
+
 https://www.dpmms.cam.ac.uk/~taf1000/papers/genus2ctp.html
 
 and 
 
 [2] T.A. Fisher and M. Liu, Minimisation of 2-coverings of genus 2 Jacobians
+
 https://www.dpmms.cam.ac.uk/~taf1000/papers/g2minimise.html
 
 Attaching the files "g2minimisation.m" and "genus2ctp.m" will make available the intrinsics "TwoDescentGenus2" 
