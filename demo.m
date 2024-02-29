@@ -118,7 +118,7 @@ for ctr in [1..#ff] do
   f := ff[ctr];
   assert Degree(f) in [5,6];
   if Degree(f) eq 5 then
-    assert exists(j){j : j in [0..100] | Evaluate(f,j) ne 0};
+    assert exists(j){j : j in [0..5] | Evaluate(f,j) ne 0};
     f := P!(x^6*Evaluate(f,1/x+j));
     assert Degree(f) eq 6;
   end if;
