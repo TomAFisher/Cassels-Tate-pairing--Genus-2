@@ -1,23 +1,12 @@
-/*
-QQ := Rationals();
-P<x> := PolynomialRing(QQ); t := x;
 
-g2ctpdata := recformat<
-             label : MonStgElt,
-             notes : MonStgElt,
-      discriminant : RngIntElt,
-                 f : RngUPolElt,
-  deficient_places : SeqEnum,
-           torsion : SeqEnum,
-  	      rank : RngIntElt,
-	generators : SeqEnum,  
-analytic_order_III : RngIntElt,  
-	    models : SeqEnum,
-                 c : SeqEnum,
-	       ctp : SeqEnum>;
-*/
-
-t := x;
+// A MAGMA file accompanying the article
+//
+// COMPUTING THE CASSELS-TATE PAIRING ON THE 2-SELMER GROUP OF A GENUS 2 JACOBIAN
+// by TOM FISHER AND JIALI YAN
+//
+// This file contains some examples taken from the LMFDB
+//
+// The file "g2ctp_examples.m" should be loaded first to define record type used.
 
 examples_LMFDB := [
 
@@ -8068,7 +8057,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "25794.a.696438.1",
 discriminant := 696438,
-f := -3*t^6 + 24*t^5 - 16*t^4 - 178*t^3 + 4*t^2 + 924*t - 855,
+f := -3*x^6 + 24*x^5 - 16*x^4 - 178*x^3 + 4*x^2 + 924*x - 855,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -8220,7 +8209,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "26362.a.26362.1",
 discriminant := 26362,
-f := -20*t^6 - 116*t^5 - 147*t^4 + 76*t^3 + 40*t^2 + 4*t,
+f := -20*x^6 - 116*x^5 - 147*x^4 + 76*x^3 + 40*x^2 + 4*x,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -8870,7 +8859,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "28571.a.28571.1",
 discriminant := 28571,
-f := -7*t^6 - 64*t^5 - 178*t^4 - 144*t^3 - 31*t^2 + 4*t,
+f := -7*x^6 - 64*x^5 - 178*x^4 - 144*x^3 - 31*x^2 + 4*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -9314,7 +9303,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "30453.a.30453.1",
 discriminant := 30453,
-f := -3*t^6 + 2*t^5 + 5*t^4 + 14*t^3 + 18*t^2 - 44*t - 51,
+f := -3*x^6 + 2*x^5 + 5*x^4 + 14*x^3 + 18*x^2 - 44*x - 51,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -11441,7 +11430,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "36356.b.72712.1",
 discriminant := 72712,
-f := -12*t^6 - 52*t^5 + 45*t^4 + 214*t^3 - 147*t^2 + 112*t - 260,
+f := -12*x^6 - 52*x^5 + 45*x^4 + 214*x^3 - 147*x^2 + 112*x - 260,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -12274,7 +12263,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "39102.b.78204.1",
 discriminant := 78204,
-f := -12*t^6 - 128*t^5 - 523*t^4 - 970*t^3 - 691*t^2 - 8*t,
+f := -12*x^6 - 128*x^5 - 523*x^4 - 970*x^3 - 691*x^2 - 8*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -12324,7 +12313,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "39195.a.39195.1",
 discriminant := 39195,
-f := -4*t^6 + 16*t^5 + 9*t^4 - 60*t^3 - 18*t^2 + 32*t - 7,
+f := -4*x^6 + 16*x^5 + 9*x^4 - 60*x^3 - 18*x^2 + 32*x - 7,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -12945,7 +12934,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "41856.a.41856.1",
 discriminant := 41856,
-f := -4*t^6 + 72*t^4 - 144*t^3 + 61*t^2 + 4*t - 4,
+f := -4*x^6 + 72*x^4 - 144*x^3 + 61*x^2 + 4*x - 4,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -12995,7 +12984,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "41981.a.41981.1",
 discriminant := 41981,
-f := 8*t^6 - 68*t^5 - 115*t^4 + 50*t^3 + 79*t^2 + 18*t - 31,
+f := 8*x^6 - 68*x^5 - 115*x^4 + 50*x^3 + 79*x^2 + 18*x - 31,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -13538,7 +13527,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "44000.c.440000.1",
 discriminant := 440000,
-f := -3*t^6 - 16*t^5 + 8*t^4 + 56*t^3 - 128*t^2 + 120*t - 40,
+f := -3*x^6 - 16*x^5 + 8*x^4 + 56*x^3 - 128*x^2 + 120*x - 40,
 deficient_places := [ 2, 5 ],
 torsion := [ 2 ],
 rank := 0,
@@ -14796,7 +14785,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "49471.a.49471.1",
 discriminant := 49471,
-f := -3*t^6 + 4*t^5 - 10*t^4 - 51*t^2 - 80*t - 28,
+f := -3*x^6 + 4*x^5 - 10*x^4 - 51*x^2 - 80*x - 28,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -16132,7 +16121,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "56202.a.112404.1",
 discriminant := 112404,
-f := -60*t^6 + 228*t^5 - 215*t^4 + 10*t^3 - 23*t^2 - 4*t,
+f := -60*x^6 + 228*x^5 - 215*x^4 + 10*x^3 - 23*x^2 - 4*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -17467,7 +17456,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "62246.a.62246.1",
 discriminant := 62246,
-f := -4*t^6 + 4*t^5 - 59*t^4 - 218*t^3 - 177*t^2 - 26*t - 11,
+f := -4*x^6 + 4*x^5 - 59*x^4 - 218*x^3 - 177*x^2 - 26*x - 11,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -19235,7 +19224,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "69966.a.209898.1",
 discriminant := 209898,
-f := -20*t^6 + 96*t^5 - 127*t^4 + 66*t^3 - 127*t^2 + 96*t - 20,
+f := -20*x^6 + 96*x^5 - 127*x^4 + 66*x^3 - 127*x^2 + 96*x - 20,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -20039,7 +20028,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "74900.a.749000.1",
 discriminant := 749000,
-f := -84*t^6 + 140*t^5 - 1707*t^4 - 1262*t^3 - 203*t^2 + 8*t,
+f := -84*x^6 + 140*x^5 - 1707*x^4 - 1262*x^3 - 203*x^2 + 8*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -20154,7 +20143,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "75352.a.150704.1",
 discriminant := 150704,
-f := -3*t^6 - 2*t^5 - 13*t^4 + 76*t^3 - 25*t^2 - 50*t - 11,
+f := -3*x^6 - 2*x^5 - 13*x^4 + 76*x^3 - 25*x^2 - 50*x - 11,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -20285,7 +20274,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "75813.a.75813.1",
 discriminant := 75813,
-f := -3*t^6 - 4*t^5 + 14*t^4 + 102*t^3 + 97*t^2 - 402*t - 643,
+f := -3*x^6 - 4*x^5 + 14*x^4 + 102*x^3 + 97*x^2 - 402*x - 643,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -20756,7 +20745,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "78064.a.312256.1",
 discriminant := 312256,
-f := -7*t^6 + 77*t^5 - 167*t^4 - 250*t^3 - 48*t^2 - t,
+f := -7*x^6 + 77*x^5 - 167*x^4 - 250*x^3 - 48*x^2 - x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -22324,7 +22313,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "86986.a.86986.1",
 discriminant := 86986,
-f := -104*t^6 + 576*t^5 - 755*t^4 - 140*t^3 + 60*t^2 - 4*t,
+f := -104*x^6 + 576*x^5 - 755*x^4 - 140*x^3 + 60*x^2 - 4*x,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -22784,7 +22773,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "88445.a.88445.1",
 discriminant := 88445,
-f := -7*t^6 + 142*t^5 - 699*t^4 - 236*t^3 + 196*t^2 + 100*t + 12,
+f := -7*x^6 + 142*x^5 - 699*x^4 - 236*x^3 + 196*x^2 + 100*x + 12,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -22946,7 +22935,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "89340.a.357360.1",
 discriminant := 357360,
-f := -12*t^6 + 236*t^4 - 256*t^3 - 1151*t^2 + 2538*t - 1411,
+f := -12*x^6 + 236*x^4 - 256*x^3 - 1151*x^2 + 2538*x - 1411,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -23013,7 +23002,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "89776.a.179552.1",
 discriminant := 179552,
-f := -2*t^6 + 23*t^5 - 40*t^4 - 142*t^3 - 133*t^2 - 51*t - 7,
+f := -2*x^6 + 23*x^5 - 40*x^4 - 142*x^3 - 133*x^2 - 51*x - 7,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -24386,7 +24375,7 @@ ctp := []>,
 rec<g2ctpdata | 
 label := "96678.b.580068.1",
 discriminant := 580068,
-f := -28*t^6 + 220*t^5 - 543*t^4 + 442*t^3 - 135*t^2 + 12*t,
+f := -28*x^6 + 220*x^5 - 543*x^4 + 442*x^3 - 135*x^2 + 12*x,
 deficient_places := [],
 torsion := [ 2, 2 ],
 rank := 0,
@@ -24779,7 +24768,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "97969.a.97969.1",
 discriminant := 97969,
-f := -3*t^6 - 2*t^5 + 33*t^4 - 6*t^3 - 102*t^2 + 92*t - 7,
+f := -3*x^6 - 2*x^5 + 33*x^4 - 6*x^3 - 102*x^2 + 92*x - 7,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -27149,7 +27138,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "111148.a.111148.1",
 discriminant := 111148,
-f := -3*t^6 + 34*t^5 - 57*t^4 - 214*t^3 - 179*t^2 - 60*t - 8,
+f := -3*x^6 + 34*x^5 - 57*x^4 - 214*x^3 - 179*x^2 - 60*x - 8,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -27286,7 +27275,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "111989.a.111989.2",
 discriminant := 111989,
-f := -147*t^6 - 230*t^5 - 15*t^4 + 72*t^3 - 4*t,
+f := -147*x^6 - 230*x^5 - 15*x^4 + 72*x^3 - 4*x,
 deficient_places := [],
 torsion := [ 2, 2 ],
 rank := 0,
@@ -27902,7 +27891,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "114240.d.114240.1",
 discriminant := 114240,
-f := -35*t^6 + 414*t^4 - 1259*t^2 + 204,
+f := -35*x^6 + 414*x^4 - 1259*x^2 + 204,
 deficient_places := [],
 torsion := [ 2, 2 ],
 rank := 0,
@@ -27986,7 +27975,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "114471.a.801297.1",
 discriminant := 801297,
-f := -3*t^6 + 478*t^4 + 1360*t^3 - 19435*t^2 - 106964*t - 127880,
+f := -3*x^6 + 478*x^4 + 1360*x^3 - 19435*x^2 - 106964*x - 127880,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 1,
@@ -28022,7 +28011,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "114517.a.114517.1",
 discriminant := 114517,
-f := -3*t^6 + 2*t^5 - 17*t^4 + 24*t^3 - 5*t^2 - 14*t - 3,
+f := -3*x^6 + 2*x^5 - 17*x^4 + 24*x^3 - 5*x^2 - 14*x - 3,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -28789,7 +28778,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "118806.a.118806.1",
 discriminant := 118806,
-f := -4*t^6 - 20*t^5 - 24*t^4 + 9*t^2 + 34*t - 19,
+f := -4*x^6 - 20*x^5 - 24*x^4 + 9*x^2 + 34*x - 19,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -29186,7 +29175,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "121077.a.121077.1",
 discriminant := 121077,
-f := -3*t^6 + 84*t^5 - 620*t^4 + 446*t^3 - 56*t^2 - 24*t + 5,
+f := -3*x^6 + 84*x^5 - 620*x^4 + 446*x^3 - 56*x^2 - 24*x + 5,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -29600,7 +29589,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "123652.a.247304.1",
 discriminant := 247304,
-f := -28*t^6 + 340*t^5 - 1111*t^4 + 482*t^3 - 75*t^2 + 4*t,
+f := -28*x^6 + 340*x^5 - 1111*x^4 + 482*x^3 - 75*x^2 + 4*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -32658,7 +32647,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "142082.a.142082.1",
 discriminant := 142082,
-f := -3*t^6 - 2*t^5 + 23*t^4 + 18*t^3 - 47*t^2 - 40*t + 8,
+f := -3*x^6 - 2*x^5 + 23*x^4 + 18*x^3 - 47*x^2 - 40*x + 8,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -32949,7 +32938,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "143778.a.575112.1",
 discriminant := 575112,
-f := 4*t^6 - 84*t^5 + 641*t^4 - 1632*t^3 + 160*t^2 - 4*t,
+f := 4*x^6 - 84*x^5 + 641*x^4 - 1632*x^3 + 160*x^2 - 4*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 1,
@@ -34583,7 +34572,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "153747.a.153747.1",
 discriminant := 153747,
-f := 5*t^6 - 36*t^5 + 2*t^4 + 414*t^3 - 551*t^2 - 490*t - 87,
+f := 5*x^6 - 36*x^5 + 2*x^4 + 414*x^3 - 551*x^2 - 490*x - 87,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -34883,7 +34872,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "155980.a.311960.1",
 discriminant := 311960,
-f := -4*t^6 - 4*t^5 + 53*t^4 + 38*t^3 - 177*t^2 - 130*t - 23,
+f := -4*x^6 - 4*x^5 + 53*x^4 + 38*x^3 - 177*x^2 - 130*x - 23,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -34903,7 +34892,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "156104.a.624416.1",
 discriminant := 624416,
-f := -4*t^6 + 68*t^5 + 209*t^4 - 128*t^3 - 326*t^2 + 300*t - 67,
+f := -4*x^6 + 68*x^5 + 209*x^4 - 128*x^3 - 326*x^2 + 300*x - 67,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -36678,7 +36667,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "171369.b.171369.1",
 discriminant := 171369,
-f := -3*t^6 - 6*t^5 - 9*t^4 - 56*t^3 - 93*t^2 - 46*t - 7,
+f := -3*x^6 - 6*x^5 - 9*x^4 - 56*x^3 - 93*x^2 - 46*x - 7,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -37201,7 +37190,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "176157.a.176157.1",
 discriminant := 176157,
-f := -3*t^6 - 38*t^5 - 181*t^4 - 382*t^3 - 299*t^2 + 4*t,
+f := -3*x^6 - 38*x^5 - 181*x^4 - 382*x^3 - 299*x^2 + 4*x,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -37323,7 +37312,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "177569.a.177569.1",
 discriminant := 177569,
-f := -3*t^6 - 28*t^5 - 84*t^4 - 84*t^3 - 20*t^2 - 12*t - 4,
+f := -3*x^6 - 28*x^5 - 84*x^4 - 84*x^3 - 20*x^2 - 12*x - 4,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -38940,7 +38929,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "187828.a.187828.1",
 discriminant := 187828,
-f := -3*t^6 + 2*t^5 + 39*t^4 - 18*t^3 - 127*t^2 + 32*t - 4,
+f := -3*x^6 + 2*x^5 + 39*x^4 - 18*x^3 - 127*x^2 + 32*x - 4,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -39403,7 +39392,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "191218.a.191218.1",
 discriminant := 191218,
-f := -3*t^6 + 10*t^5 + 7*t^4 - 22*t^3 - 27*t^2 - 4*t - 4,
+f := -3*x^6 + 10*x^5 + 7*x^4 - 22*x^3 - 27*x^2 - 4*x - 4,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -39858,7 +39847,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "194850.a.194850.1",
 discriminant := 194850,
-f := -3*t^6 - 12*t^5 - 58*t^4 + 700*t^3 - 755*t^2 + 284*t - 36,
+f := -3*x^6 - 12*x^5 - 58*x^4 + 700*x^3 - 755*x^2 + 284*x - 36,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -40343,7 +40332,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "197276.b.394552.1",
 discriminant := 394552,
-f := -23*t^6 - 108*t^5 - 26*t^4 + 334*t^3 + 165*t^2 - 54*t - 31,
+f := -23*x^6 - 108*x^5 - 26*x^4 + 334*x^3 + 165*x^2 - 54*x - 31,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -41977,7 +41966,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "213187.a.213187.1",
 discriminant := 213187,
-f := -3*t^6 + 10*t^5 - 3*t^4 - 250*t^3 - 274*t^2 + 176*t - 23,
+f := -3*x^6 + 10*x^5 - 3*x^4 - 250*x^3 - 274*x^2 + 176*x - 23,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -42794,7 +42783,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "220191.a.220191.1",
 discriminant := 220191,
-f := -3*t^6 + 82*t^4 - 80*t^3 - 491*t^2 + 812*t - 328,
+f := -3*x^6 + 82*x^4 - 80*x^3 - 491*x^2 + 812*x - 328,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -44093,7 +44082,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "234946.a.469892.1",
 discriminant := 469892,
-f := -44*t^6 - 236*t^5 - 311*t^4 + 28*t^3 + 36*t^2 + 4*t,
+f := -44*x^6 - 236*x^5 - 311*x^4 + 28*x^3 + 36*x^2 + 4*x,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -44621,7 +44610,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "238714.a.238714.1",
 discriminant := 238714,
-f := -3*t^6 - 4*t^5 + 40*t^4 + 106*t^3 + 68*t^2 - 7,
+f := -3*x^6 - 4*x^5 + 40*x^4 + 106*x^3 + 68*x^2 - 7,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -45791,7 +45780,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "247891.a.247891.1",
 discriminant := 247891,
-f := -3*t^6 + 8*t^5 + 10*t^4 - 2*t^3 - 47*t^2 - 46*t - 11,
+f := -3*x^6 + 8*x^5 + 10*x^4 - 2*x^3 - 47*x^2 - 46*x - 11,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -47938,7 +47927,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "265408.a.530816.1",
 discriminant := 530816,
-f := -3*t^6 + 26*t^5 - 43*t^4 - 60*t^3 - 4*t^2 - 4,
+f := -3*x^6 + 26*x^5 - 43*x^4 - 60*x^3 - 4*x^2 - 4,
 deficient_places := [ 0, 2 ],
 torsion := [],
 rank := 0,
@@ -48118,7 +48107,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "267211.a.267211.1",
 discriminant := 267211,
-f := -7*t^6 + 56*t^5 - 114*t^4 + 16*t^3 - 31*t^2 - 4*t,
+f := -7*x^6 + 56*x^5 - 114*x^4 + 16*x^3 - 31*x^2 - 4*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -49213,7 +49202,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "276083.a.276083.2",
 discriminant := 276083,
-f := -3*t^6 - 4*t^5 + 18*t^4 + 32*t^3 + t^2 - 64*t - 100,
+f := -3*x^6 - 4*x^5 + 18*x^4 + 32*x^3 + x^2 - 64*x - 100,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -49399,7 +49388,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "277976.a.555952.1",
 discriminant := 555952,
-f := -3*t^6 - 34*t^5 - 95*t^4 + 20*t^3 + 40*t^2 + 8*t,
+f := -3*x^6 - 34*x^5 - 95*x^4 + 20*x^3 + 40*x^2 + 8*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -49960,7 +49949,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "284067.a.284067.1",
 discriminant := 284067,
-f := -3*t^6 - 8*t^5 - 20*t^4 + 22*t^3 - 12*t - 3,
+f := -3*x^6 - 8*x^5 - 20*x^4 + 22*x^3 - 12*x - 3,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -50830,7 +50819,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "291357.a.291357.1",
 discriminant := 291357,
-f := -3*t^6 + 6*t^5 + 3*t^4 + 4*t^3 - 5*t^2 - 22*t - 11,
+f := -3*x^6 + 6*x^5 + 3*x^4 + 4*x^3 - 5*x^2 - 22*x - 11,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -52553,7 +52542,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "307509.a.307509.1",
 discriminant := 307509,
-f := t^6 + 28*t^5 + 246*t^4 + 708*t^3 + 105*t^2 + 4*t,
+f := x^6 + 28*x^5 + 246*x^4 + 708*x^3 + 105*x^2 + 4*x,
 deficient_places := [],
 torsion := [],
 rank := 1,
@@ -53035,7 +53024,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "311769.a.311769.1",
 discriminant := 311769,
-f := -3*t^6 - 6*t^4 + 28*t^3 - 3*t^2 - 16*t - 4,
+f := -3*x^6 - 6*x^4 + 28*x^3 - 3*x^2 - 16*x - 4,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -53952,7 +53941,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "319206.a.319206.1",
 discriminant := 319206,
-f := -3*t^6 - 144*t^5 - 1846*t^4 - 2708*t^3 - 1567*t^2 - 408*t - 40,
+f := -3*x^6 - 144*x^5 - 1846*x^4 - 2708*x^3 - 1567*x^2 - 408*x - 40,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -55029,7 +55018,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "328727.a.328727.1",
 discriminant := 328727,
-f := -3*t^6 - 4*t^5 + 38*t^4 + 2*t^3 - 67*t^2 - 42*t - 7,
+f := -3*x^6 - 4*x^5 + 38*x^4 + 2*x^3 - 67*x^2 - 42*x - 7,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -55154,7 +55143,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "330400.b.660800.1",
 discriminant := 660800,
-f := -23*t^6 - 52*t^5 - 28*t^4 + 24*t^3 - 80*t^2 + 120*t - 40,
+f := -23*x^6 - 52*x^5 - 28*x^4 + 24*x^3 - 80*x^2 + 120*x - 40,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -55254,7 +55243,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "330624.b.330624.1",
 discriminant := 330624,
-f := -28*t^6 - 71*t^4 + 388*t^2 - 328,
+f := -28*x^6 - 71*x^4 + 388*x^2 - 328,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -55368,7 +55357,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "331917.a.331917.1",
 discriminant := 331917,
-f := -3*t^6 + 40*t^5 - 138*t^4 + 36*t^3 - 35*t^2 + 8*t - 4,
+f := -3*x^6 + 40*x^5 - 138*x^4 + 36*x^3 - 35*x^2 + 8*x - 4,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -56315,7 +56304,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "341893.a.341893.1",
 discriminant := 341893,
-f := -3*t^6 - 2*t^5 - 27*t^4 + 20*t^3 - 52*t^2 + 124*t - 64,
+f := -3*x^6 - 2*x^5 - 27*x^4 + 20*x^3 - 52*x^2 + 124*x - 64,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -56787,7 +56776,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "346626.a.346626.1",
 discriminant := 346626,
-f := -3*t^6 + 30*t^4 + 40*t^3 - 359*t^2 + 532*t - 244,
+f := -3*x^6 + 30*x^4 + 40*x^3 - 359*x^2 + 532*x - 244,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -57102,7 +57091,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "349184.d.349184.1",
 discriminant := 349184,
-f := -2*t^6 + 2*t^5 + 11*t^4 - 19*t^2 - 17*t - 5,
+f := -2*x^6 + 2*x^5 + 11*x^4 - 19*x^2 - 17*x - 5,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -58845,7 +58834,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "365462.a.730924.1",
 discriminant := 730924,
-f := -7*t^6 - 386*t^5 - 5449*t^4 - 5862*t^3 - 2443*t^2 - 456*t - 32,
+f := -7*x^6 - 386*x^5 - 5449*x^4 - 5862*x^3 - 2443*x^2 - 456*x - 32,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -58931,7 +58920,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "367079.a.367079.1",
 discriminant := 367079,
-f := -3*t^6 - 10*t^5 + 7*t^4 + 38*t^3 - 3*t^2 - 48*t - 28,
+f := -3*x^6 - 10*x^5 + 7*x^4 + 38*x^3 - 3*x^2 - 48*x - 28,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -59890,7 +59879,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "379563.a.379563.1",
 discriminant := 379563,
-f := -3*t^6 - 8*t^5 + 6*t^4 + 22*t^3 + t^2 - 10*t - 11,
+f := -3*x^6 - 8*x^5 + 6*x^4 + 22*x^3 + x^2 - 10*x - 11,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -60141,7 +60130,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "382077.a.382077.1",
 discriminant := 382077,
-f := -3*t^6 - 2*t^5 + 13*t^4 - 2*t^3 - 18*t^2 + 12*t - 3,
+f := -3*x^6 - 2*x^5 + 13*x^4 - 2*x^3 - 18*x^2 + 12*x - 3,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -60580,7 +60569,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "389776.b.389776.1",
 discriminant := 389776,
-f := -3*t^6 - 2*t^5 + 247*t^4 + 1020*t^3 + 499*t^2 + 86*t + 5,
+f := -3*x^6 - 2*x^5 + 247*x^4 + 1020*x^3 + 499*x^2 + 86*x + 5,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -60977,7 +60966,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "394389.a.394389.1",
 discriminant := 394389,
-f := -3*t^6 - 12*t^5 - 6*t^4 + 40*t^3 + t^2 - 16*t - 4,
+f := -3*x^6 - 12*x^5 - 6*x^4 + 40*x^3 + x^2 - 16*x - 4,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -63215,7 +63204,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "422144.p.422144.1",
 discriminant := 422144,
-f := -t^6 + 7*t^4 - 2*t^3 - 12*t^2 + 7*t - 2,
+f := -x^6 + 7*x^4 - 2*x^3 - 12*x^2 + 7*x - 2,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -63578,7 +63567,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "425698.a.425698.1",
 discriminant := 425698,
-f := -4*t^6 - 36*t^5 - 95*t^4 - 84*t^3 - 112*t^2 - 60*t - 32,
+f := -4*x^6 - 36*x^5 - 95*x^4 - 84*x^3 - 112*x^2 - 60*x - 32,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -64024,7 +64013,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "432073.a.432073.1",
 discriminant := 432073,
-f := -3*t^6 - 28*t^5 - 58*t^4 + 44*t^3 + 41*t^2 - 12*t - 8,
+f := -3*x^6 - 28*x^5 - 58*x^4 + 44*x^3 + 41*x^2 - 12*x - 8,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -64137,7 +64126,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "432754.a.432754.1",
 discriminant := 432754,
-f := -3*t^6 - 8*t^5 + 30*t^4 - 8*t^3 - 15*t^2 + 4*t - 4,
+f := -3*x^6 - 8*x^5 + 30*x^4 - 8*x^3 - 15*x^2 + 4*x - 4,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -64533,7 +64522,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "436445.b.436445.1",
 discriminant := 436445,
-f := -3*t^6 - 8*t^5 + 16*t^4 + 38*t^3 - 24*t^2 - 32*t - 7,
+f := -3*x^6 - 8*x^5 + 16*x^4 + 38*x^3 - 24*x^2 - 32*x - 7,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 1,
@@ -64807,7 +64796,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "438837.b.438837.1",
 discriminant := 438837,
-f := -3*t^6 + 20*t^5 - 10*t^4 - 92*t^3 + 9*t^2 + 28*t - 64,
+f := -3*x^6 + 20*x^5 - 10*x^4 - 92*x^3 + 9*x^2 + 28*x - 64,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -65484,7 +65473,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "443278.a.443278.1",
 discriminant := 443278,
-f := -3*t^6 + 2*t^5 + 15*t^4 + 2*t^3 + t^2 - 32*t - 72,
+f := -3*x^6 + 2*x^5 + 15*x^4 + 2*x^3 + x^2 - 32*x - 72,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -67683,7 +67672,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "467969.a.467969.1",
 discriminant := 467969,
-f := -15*t^6 + 74*t^5 - 63*t^4 - 64*t^3 - 28*t^2 - 4*t,
+f := -15*x^6 + 74*x^5 - 63*x^4 - 64*x^3 - 28*x^2 - 4*x,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -67880,7 +67869,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "470150.a.470150.1",
 discriminant := 470150,
-f := -7*t^6 - 22*t^5 + 7*t^4 + 58*t^3 + 25*t^2 - 8,
+f := -7*x^6 - 22*x^5 + 7*x^4 + 58*x^3 + 25*x^2 - 8,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -68481,7 +68470,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "475889.a.475889.1",
 discriminant := 475889,
-f := -3*t^6 - 20*t^5 + 10*t^4 + 140*t^3 - 195*t^2 - 84*t - 8,
+f := -3*x^6 - 20*x^5 + 10*x^4 + 140*x^3 - 195*x^2 - 84*x - 8,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -69455,7 +69444,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "483543.a.483543.1",
 discriminant := 483543,
-f := -3*t^6 - 8*t^5 - 18*t^4 + 10*t^3 + 81*t^2 + 6*t - 75,
+f := -3*x^6 - 8*x^5 - 18*x^4 + 10*x^3 + 81*x^2 + 6*x - 75,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -69815,7 +69804,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "486117.c.486117.1",
 discriminant := 486117,
-f := -4*t^6 + 64*t^5 - 127*t^4 - 32*t^3 + 64*t^2 + 4*t - 8,
+f := -4*x^6 + 64*x^5 - 127*x^4 - 32*x^3 + 64*x^2 + 4*x - 8,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -70520,7 +70509,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "492402.a.492402.1",
 discriminant := 492402,
-f := -3*t^6 + 26*t^4 + 24*t^3 - 235*t^2 + 332*t - 148,
+f := -3*x^6 + 26*x^4 + 24*x^3 - 235*x^2 + 332*x - 148,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -71842,7 +71831,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "509357.b.509357.1",
 discriminant := 509357,
-f := -3*t^6 + 4*t^5 + 28*t^4 + 28*t^3 + 8*t^2 - 4*t - 8,
+f := -3*x^6 + 4*x^5 + 28*x^4 + 28*x^3 + 8*x^2 - 4*x - 8,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -72043,7 +72032,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "514211.a.514211.1",
 discriminant := 514211,
-f := -23*t^6 + 214*t^4 - 150*t^3 - 491*t^2 + 702*t - 275,
+f := -23*x^6 + 214*x^4 - 150*x^3 - 491*x^2 + 702*x - 275,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -72468,7 +72457,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "520784.a.520784.1",
 discriminant := 520784,
-f := -7*t^6 + 2*t^5 + 75*t^4 + 20*t^3 - 229*t^2 - 150*t + 77,
+f := -7*x^6 + 2*x^5 + 75*x^4 + 20*x^3 - 229*x^2 - 150*x + 77,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -73106,7 +73095,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "530822.a.530822.1",
 discriminant := 530822,
-f := -11*t^6 - 130*t^5 - 395*t^4 - 68*t^3 - 24*t^2 - 4*t,
+f := -11*x^6 - 130*x^5 - 395*x^4 - 68*x^3 - 24*x^2 - 4*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -73316,7 +73305,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "535377.a.535377.1",
 discriminant := 535377,
-f := -3*t^6 + 458*t^4 + 1328*t^3 - 17739*t^2 - 100436*t - 130768,
+f := -3*x^6 + 458*x^4 + 1328*x^3 - 17739*x^2 - 100436*x - 130768,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -74523,7 +74512,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "555043.a.555043.1",
 discriminant := 555043,
-f := -3*t^6 - 20*t^5 + 222*t^3 + 276*t^2 - 616*t - 1019,
+f := -3*x^6 - 20*x^5 + 222*x^3 + 276*x^2 - 616*x - 1019,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -75189,7 +75178,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "566198.a.566198.1",
 discriminant := 566198,
-f := t^6 - 4*t^5 - 50*t^4 - 28*t^3 + 57*t^2 + 84*t - 68,
+f := x^6 - 4*x^5 - 50*x^4 - 28*x^3 + 57*x^2 + 84*x - 68,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 1,
@@ -75533,7 +75522,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "570262.a.570262.1",
 discriminant := 570262,
-f := -4*t^6 + 116*t^5 - 939*t^4 + 1438*t^3 - 847*t^2 + 216*t - 20,
+f := -4*x^6 + 116*x^5 - 939*x^4 + 1438*x^3 - 847*x^2 + 216*x - 20,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -76620,7 +76609,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "587539.a.587539.1",
 discriminant := 587539,
-f := -31*t^6 + 58*t^5 - 9*t^4 + 98*t^3 - 107*t^2 - 36*t - 112,
+f := -31*x^6 + 58*x^5 - 9*x^4 + 98*x^3 - 107*x^2 - 36*x - 112,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -76678,7 +76667,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "588032.h.588032.1",
 discriminant := 588032,
-f := -t^6 + 13*t^4 + 15*t^3 - 42*t^2 - 98*t - 57,
+f := -x^6 + 13*x^4 + 15*x^3 - 42*x^2 - 98*x - 57,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -77531,7 +77520,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "603763.a.603763.1",
 discriminant := 603763,
-f := -11*t^6 + 54*t^5 + 83*t^4 - 308*t^3 - 389*t^2 - 150*t - 19,
+f := -11*x^6 + 54*x^5 + 83*x^4 - 308*x^3 - 389*x^2 - 150*x - 19,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -78149,7 +78138,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "614523.a.614523.1",
 discriminant := 614523,
-f := -7*t^6 - 76*t^5 + 684*t^4 - 914*t^3 - 816*t^2 - 196*t - 15,
+f := -7*x^6 - 76*x^5 + 684*x^4 - 914*x^3 - 816*x^2 - 196*x - 15,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -78264,7 +78253,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "616510.a.616510.1",
 discriminant := 616510,
-f := -12*t^6 + 88*t^5 - 143*t^4 - 94*t^3 + 73*t^2 + 80*t + 20,
+f := -12*x^6 + 88*x^5 - 143*x^4 - 94*x^3 + 73*x^2 + 80*x + 20,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -78412,7 +78401,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "617584.a.617584.1",
 discriminant := 617584,
-f := -4*t^6 - 604*t^4 + 880*t^2 - 319,
+f := -4*x^6 - 604*x^4 + 880*x^2 - 319,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -78715,7 +78704,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "622506.a.622506.1",
 discriminant := 622506,
-f := -4*t^6 + 12*t^5 - 63*t^4 + 106*t^3 + 95*t^2 - 146*t - 95,
+f := -4*x^6 + 12*x^5 - 63*x^4 + 106*x^3 + 95*x^2 - 146*x - 95,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -78860,7 +78849,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "624978.a.624978.1",
 discriminant := 624978,
-f := -3*t^6 - 42*t^5 - 149*t^4 + 22*t^3 + 265*t^2 + 120*t + 8,
+f := -3*x^6 - 42*x^5 - 149*x^4 + 22*x^3 + 265*x^2 + 120*x + 8,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -79208,7 +79197,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "635937.a.635937.1",
 discriminant := 635937,
-f := -3*t^6 + 32*t^4 + 34*t^3 - 84*t^2 - 184*t - 99,
+f := -3*x^6 + 32*x^4 + 34*x^3 - 84*x^2 - 184*x - 99,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -80807,7 +80796,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "664244.a.664244.1",
 discriminant := 664244,
-f := -4*t^6 - 3*t^4 + 14*t^3 + 17*t^2 - 8*t - 8,
+f := -4*x^6 - 3*x^4 + 14*x^3 + 17*x^2 - 8*x - 8,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -81197,7 +81186,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "671136.a.671136.1",
 discriminant := 671136,
-f := -4*t^6 + 12*t^4 - 20*t^3 - 19*t^2 + 20*t - 4,
+f := -4*x^6 + 12*x^4 - 20*x^3 - 19*x^2 + 20*x - 4,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -81222,7 +81211,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "672346.b.672346.1",
 discriminant := 672346,
-f := -4*t^6 + 4*t^5 + 49*t^4 - 28*t^3 - 202*t^2 - 92*t - 11,
+f := -4*x^6 + 4*x^5 + 49*x^4 - 28*x^3 - 202*x^2 - 92*x - 11,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -81311,7 +81300,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "674622.a.674622.1",
 discriminant := 674622,
-f := -3*t^6 - 30*t^5 - 69*t^4 + 66*t^3 + 149*t^2 - 148*t + 28,
+f := -3*x^6 - 30*x^5 - 69*x^4 + 66*x^3 + 149*x^2 - 148*x + 28,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -82153,7 +82142,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "689280.a.689280.1",
 discriminant := 689280,
-f := -3*t^6 + 8*t^5 + 12*t^4 - 28*t^3 - 16*t^2 + 16*t - 4,
+f := -3*x^6 + 8*x^5 + 12*x^4 - 28*x^3 - 16*x^2 + 16*x - 4,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -82588,7 +82577,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "695386.a.695386.1",
 discriminant := 695386,
-f := 5*t^6 - 54*t^5 + 35*t^4 + 82*t^3 - 27*t^2 - 40*t - 8,
+f := 5*x^6 - 54*x^5 + 35*x^4 + 82*x^3 - 27*x^2 - 40*x - 8,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -83259,7 +83248,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "705651.b.705651.1",
 discriminant := 705651,
-f := -3*t^6 - 32*t^5 - 66*t^4 + 92*t^3 - 91*t^2 + 32*t - 12,
+f := -3*x^6 - 32*x^5 - 66*x^4 + 92*x^3 - 91*x^2 + 32*x - 12,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -83296,7 +83285,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "708239.a.708239.1",
 discriminant := 708239,
-f := -3*t^6 + 34*t^5 - 71*t^4 - 110*t^3 + 22*t^2 + 28*t - 7,
+f := -3*x^6 + 34*x^5 - 71*x^4 - 110*x^3 + 22*x^2 + 28*x - 7,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -83476,7 +83465,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "709595.a.709595.1",
 discriminant := 709595,
-f := -3*t^6 + 8*t^5 + 16*t^4 - 26*t^3 - 36*t^2 - 16*t - 19,
+f := -3*x^6 + 8*x^5 + 16*x^4 - 26*x^3 - 36*x^2 - 16*x - 19,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -84202,7 +84191,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "722553.a.722553.1",
 discriminant := 722553,
-f := -3*t^6 + 38*t^4 - 14*t^3 - 123*t^2 + 86*t - 15,
+f := -3*x^6 + 38*x^4 - 14*x^3 - 123*x^2 + 86*x - 15,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -84742,7 +84731,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "729872.a.729872.1",
 discriminant := 729872,
-f := 13*t^6 - 88*t^4 + 180*t^2 - 116,
+f := 13*x^6 - 88*x^4 + 180*x^2 - 116,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -85186,7 +85175,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "735488.c.735488.1",
 discriminant := 735488,
-f := -4*t^6 + 28*t^4 - 31*t^2 - 68,
+f := -4*x^6 + 28*x^4 - 31*x^2 - 68,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 1,
@@ -85406,7 +85395,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "739077.a.739077.1",
 discriminant := 739077,
-f := -3*t^6 + 38*t^4 - 48*t^3 - 119*t^2 + 308*t - 192,
+f := -3*x^6 + 38*x^4 - 48*x^3 - 119*x^2 + 308*x - 192,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -85774,7 +85763,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "745517.a.745517.1",
 discriminant := 745517,
-f := -3*t^6 + 34*t^5 - 75*t^4 - 110*t^3 - 106*t^2 + 4*t - 27,
+f := -3*x^6 + 34*x^5 - 75*x^4 - 110*x^3 - 106*x^2 + 4*x - 27,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -85794,7 +85783,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "745523.a.745523.1",
 discriminant := 745523,
-f := -19*t^6 - 144*t^5 - 242*t^4 + 112*t^3 - 31*t^2 + 4*t,
+f := -19*x^6 - 144*x^5 - 242*x^4 + 112*x^3 - 31*x^2 + 4*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -85953,7 +85942,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "749811.a.749811.1",
 discriminant := 749811,
-f := -3*t^6 - 38*t^5 - 137*t^4 - 112*t^3 - 45*t^2 + 90*t - 19,
+f := -3*x^6 - 38*x^5 - 137*x^4 - 112*x^3 - 45*x^2 + 90*x - 19,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -86015,7 +86004,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "750393.a.750393.1",
 discriminant := 750393,
-f := t^6 - 16*t^5 - 24*t^4 + 70*t^3 - 72*t^2 - 32*t - 3,
+f := x^6 - 16*x^5 - 24*x^4 + 70*x^3 - 72*x^2 - 32*x - 3,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 1,
@@ -86301,7 +86290,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "753861.a.753861.1",
 discriminant := 753861,
-f := -3*t^6 - 2*t^5 + 15*t^4 + 6*t^3 - 31*t^2 + 20*t - 8,
+f := -3*x^6 - 2*x^5 + 15*x^4 + 6*x^3 - 31*x^2 + 20*x - 8,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -86525,7 +86514,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "757814.a.757814.1",
 discriminant := 757814,
-f := -3*t^6 - 2*t^5 + 21*t^4 + 8*t^3 - 60*t^2 - 36*t + 20,
+f := -3*x^6 - 2*x^5 + 21*x^4 + 8*x^3 - 60*x^2 - 36*x + 20,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -87906,7 +87895,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "783083.a.783083.1",
 discriminant := 783083,
-f := -4*t^6 + 28*t^5 - 56*t^4 + 77*t^2 - 10*t - 27,
+f := -4*x^6 + 28*x^5 - 56*x^4 + 77*x^2 - 10*x - 27,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -87995,7 +87984,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "786256.a.786256.1",
 discriminant := 786256,
-f := -3*t^6 - 4*t^5 + 20*t^4 - 36*t^2 + 64*t - 52,
+f := -3*x^6 - 4*x^5 + 20*x^4 - 36*x^2 + 64*x - 52,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -88255,7 +88244,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "789616.a.789616.1",
 discriminant := 789616,
-f := -7*t^6 - 44*t^5 - 22*t^4 + 144*t^3 - 95*t^2 + 4*t,
+f := -7*x^6 - 44*x^5 - 22*x^4 + 144*x^3 - 95*x^2 + 4*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -89918,7 +89907,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "818083.a.818083.1",
 discriminant := 818083,
-f := -4*t^6 + 57*t^4 + 16*t^3 - 224*t^2 - 60*t - 4,
+f := -4*x^6 + 57*x^4 + 16*x^3 - 224*x^2 - 60*x - 4,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -90211,7 +90200,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "822016.a.822016.1",
 discriminant := 822016,
-f := -4*t^6 + 4*t^4 + 45*t^2 - 76,
+f := -4*x^6 + 4*x^4 + 45*x^2 - 76,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -90304,7 +90293,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "823641.a.823641.1",
 discriminant := 823641,
-f := -3*t^6 - 34*t^4 - 26*t^3 - 7*t^2 - 14*t - 7,
+f := -3*x^6 - 34*x^4 - 26*x^3 - 7*x^2 - 14*x - 7,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -90564,7 +90553,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "826363.a.826363.1",
 discriminant := 826363,
-f := 8*t^6 - 28*t^5 + 17*t^4 - 52*t^3 + 32*t^2 + 12*t - 8,
+f := 8*x^6 - 28*x^5 + 17*x^4 - 52*x^3 + 32*x^2 + 12*x - 8,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -91095,7 +91084,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "836883.a.836883.1",
 discriminant := 836883,
-f := -11*t^6 - 96*t^5 - 242*t^4 - 144*t^3 - 31*t^2 + 4*t,
+f := -11*x^6 - 96*x^5 - 242*x^4 - 144*x^3 - 31*x^2 + 4*x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 1,
@@ -92166,7 +92155,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "858148.a.858148.1",
 discriminant := 858148,
-f := -4*t^6 + 4*t^5 + 65*t^4 - 70*t^3 - 255*t^2 + 304*t - 72,
+f := -4*x^6 + 4*x^5 + 65*x^4 - 70*x^3 - 255*x^2 + 304*x - 72,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -92287,7 +92276,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "859919.a.859919.1",
 discriminant := 859919,
-f := -3*t^6 + 10*t^5 + 21*t^4 - 54*t^3 - 62*t^2 + 24*t - 7,
+f := -3*x^6 + 10*x^5 + 21*x^4 - 54*x^3 - 62*x^2 + 24*x - 7,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -92706,7 +92695,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "867456.a.867456.1",
 discriminant := 867456,
-f := -4*t^6 - 40*t^5 - 52*t^4 + 304*t^3 + 245*t^2 + 62*t + 5,
+f := -4*x^6 - 40*x^5 - 52*x^4 + 304*x^3 + 245*x^2 + 62*x + 5,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 1,
@@ -93249,7 +93238,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "879360.d.879360.1",
 discriminant := 879360,
-f := -20*t^6 - 80*t^5 + t^4 + 232*t^3 - 240*t + 104,
+f := -20*x^6 - 80*x^5 + x^4 + 232*x^3 - 240*x + 104,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -93305,7 +93294,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "879389.a.879389.1",
 discriminant := 879389,
-f := -3*t^6 - 20*t^5 - 24*t^4 + 36*t^3 + 8*t^2 - 12*t - 4,
+f := -3*x^6 - 20*x^5 - 24*x^4 + 36*x^3 + 8*x^2 - 12*x - 4,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -93402,7 +93391,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "881645.a.881645.1",
 discriminant := 881645,
-f := -3*t^6 - 2*t^5 + 51*t^4 + 58*t^3 - 179*t^2 - 256*t - 84,
+f := -3*x^6 - 2*x^5 + 51*x^4 + 58*x^3 - 179*x^2 - 256*x - 84,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -93701,7 +93690,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "885537.a.885537.1",
 discriminant := 885537,
-f := -3*t^6 + 18*t^5 - 29*t^4 + 19*t^2 - 6*t - 3,
+f := -3*x^6 + 18*x^5 - 29*x^4 + 19*x^2 - 6*x - 3,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -94028,7 +94017,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "890393.a.890393.1",
 discriminant := 890393,
-f := -7*t^6 + 158*t^4 + 350*t^3 + 93*t^2 - 134*t + 73,
+f := -7*x^6 + 158*x^4 + 350*x^3 + 93*x^2 - 134*x + 73,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -94479,7 +94468,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "896422.a.896422.1",
 discriminant := 896422,
-f := -3*t^6 + 46*t^5 - 133*t^4 - 322*t^3 - 235*t^2 - 72*t - 8,
+f := -3*x^6 + 46*x^5 - 133*x^4 - 322*x^3 - 235*x^2 - 72*x - 8,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -94499,7 +94488,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "897494.a.897494.1",
 discriminant := 897494,
-f := -7*t^6 + 74*t^5 - 175*t^4 - 120*t^3 + 48*t^2 - 4*t,
+f := -7*x^6 + 74*x^5 - 175*x^4 - 120*x^3 + 48*x^2 - 4*x,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -94732,7 +94721,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "900075.a.900075.1",
 discriminant := 900075,
-f := -11*t^6 - 50*t^5 - 51*t^4 + 34*t^3 + 50*t^2 - 15,
+f := -11*x^6 - 50*x^5 - 51*x^4 + 34*x^3 + 50*x^2 - 15,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -95175,7 +95164,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "906849.a.906849.1",
 discriminant := 906849,
-f := -11*t^6 + 2*t^5 - 33*t^4 + 72*t^3 - 53*t^2 + 186*t - 175,
+f := -11*x^6 + 2*x^5 - 33*x^4 + 72*x^3 - 53*x^2 + 186*x - 175,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -95418,7 +95407,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "909931.a.909931.1",
 discriminant := 909931,
-f := -4*t^6 + 8*t^5 - 11*t^4 - 36*t^3 + 46*t^2 - 32*t - 119,
+f := -4*x^6 + 8*x^5 - 11*x^4 - 36*x^3 + 46*x^2 - 32*x - 119,
 deficient_places := [ 0 ],
 torsion := [],
 rank := 1,
@@ -95731,7 +95720,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "913071.a.913071.1",
 discriminant := 913071,
-f := -3*t^6 + 14*t^4 - 334*t^3 - 1067*t^2 - 566*t - 83,
+f := -3*x^6 + 14*x^4 - 334*x^3 - 1067*x^2 - 566*x - 83,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -95855,7 +95844,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "916742.a.916742.1",
 discriminant := 916742,
-f := -4*t^6 + 8*t^5 + 29*t^4 - 46*t^3 - 59*t^2 + 48*t - 8,
+f := -4*x^6 + 8*x^5 + 29*x^4 - 46*x^3 - 59*x^2 + 48*x - 8,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -95952,7 +95941,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "918528.b.918528.1",
 discriminant := 918528,
-f := -3*t^6 - 27*t^5 - 71*t^4 - 46*t^3 - 8*t^2 + t,
+f := -3*x^6 - 27*x^5 - 71*x^4 - 46*x^3 - 8*x^2 + x,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -97186,7 +97175,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "941360.a.941360.1",
 discriminant := 941360,
-f := -7*t^6 - 30*t^4 + 53*t^2 - 20,
+f := -7*x^6 - 30*x^4 + 53*x^2 - 20,
 deficient_places := [],
 torsion := [ 2 ],
 rank := 0,
@@ -97389,7 +97378,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "946756.a.946756.1",
 discriminant := 946756,
-f := -4*t^6 - 32*t^5 - 35*t^4 + 118*t^3 - 47*t^2 - 16*t + 8,
+f := -4*x^6 - 32*x^5 - 35*x^4 + 118*x^3 - 47*x^2 - 16*x + 8,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -97616,7 +97605,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "950381.a.950381.1",
 discriminant := 950381,
-f := 5*t^6 + 256*t^5 + 342*t^4 - 106*t^3 - 135*t^2 + 62*t - 7,
+f := 5*x^6 + 256*x^5 + 342*x^4 - 106*x^3 - 135*x^2 + 62*x - 7,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -97993,7 +97982,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "959317.a.959317.1",
 discriminant := 959317,
-f := -4*t^6 + 16*t^5 + t^4 - 42*t^3 - 3*t^2 + 16*t - 4,
+f := -4*x^6 + 16*x^5 + x^4 - 42*x^3 - 3*x^2 + 16*x - 4,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -98262,7 +98251,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "965722.b.965722.1",
 discriminant := 965722,
-f := -8*t^6 - 12*t^5 + t^4 - 42*t^3 - 35*t^2 + 16*t - 68,
+f := -8*x^6 - 12*x^5 + x^4 - 42*x^3 - 35*x^2 + 16*x - 68,
 deficient_places := [],
 torsion := [],
 rank := 0,
@@ -99738,7 +99727,7 @@ ctp := [
 rec<g2ctpdata | 
 label := "994624.a.994624.1",
 discriminant := 994624,
-f := -7*t^6 - 20*t^5 + 14*t^4 + 64*t^3 + t^2 - 44*t - 16,
+f := -7*x^6 - 20*x^5 + 14*x^4 + 64*x^3 + x^2 - 44*x - 16,
 deficient_places := [],
 torsion := [],
 rank := 0,
