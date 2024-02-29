@@ -141,7 +141,7 @@ end for;
 
 */
 
-load "~/public_html/papers/g2ctp_examples.m";
+load "g2ctp_examples.m";
 assert #examples eq 332 + 48;
 
 print "";
