@@ -72,7 +72,7 @@ assert model2 eq apply(model1,<c,PP>);
 
 /////////////////////////////////////////////////////////////
 
-// g2minred.m uses the sign conventions in [FY] rather
+// g2minimisation.m uses the sign conventions in [FY] rather
 // than [FL]. We therefore need the following variants of
 // "IsModel" and "wedge".
 
