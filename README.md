@@ -18,3 +18,5 @@ Attaching the files "g2minimisation.m" and "genus2ctp.m" will make available the
 The files "g2ctp_examples.m" and "examples_LMFDB.m" contain examples that have been computed using this code.
 
 The file "g2ctp_check_paper.m" gives further details of the formulae and examples in [1].
+
+The file "g2min-weights.m" checks some of the claims about "weights" in [2]. The main algorithm in [2] is implemented in "g2minimisation.m". The latter can be tested on the examples in "g2-min-test-data.m" using "g2-min-test-code.m".
