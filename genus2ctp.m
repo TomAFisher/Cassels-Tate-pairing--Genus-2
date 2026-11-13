@@ -216,9 +216,14 @@ end function;
 // or the base change of such to a (quadratic) number field k.
 // The genus 2 curve must be of the form y^2 = f(x) where f has degree 6.
 
-intrinsic TwoSelmerGroupTrue(J::JacHyp:checking := false) -> GrpAb,Map,GrpAbElt
-{Computes the true (i.e. unfaked) 2-Selmer group of the genus 2 Jacobian J. The genus 2 curve must be defined over Q (or the base change of such to a number field) and of the form y^2 = f(x) where f has degree 6.}
+intrinsic TwoSelmerGroupTrue(J::JacHyp:checking := false,
+    SelmerAl := "TwoSelmerGroupData") -> GrpAb,Map,GrpAbElt
+{Computes the true (i.e. unfaked) 2-Selmer group of the genus 2 Jacobian J. The genus 2 curve must be defined over Q (or the base change of such to a number field) and of the form y^2 = f(x) where f has degree 6. SelmerAl may also be "TwoSelmerGroupNew" over Q when the reduced working model has degree 5.}
   k := BaseRing(J);
+  require SelmerAl in {"TwoSelmerGroupData", "TwoSelmerGroupNew"} :
+    "SelmerAl must be TwoSelmerGroupData or TwoSelmerGroupNew";
+  require SelmerAl eq "TwoSelmerGroupData" or k cmpeq QQ :
+    "TwoSelmerGroupNew is only supported over the rationals";
   C := Curve(J);
   canontriv := HasRationalTrope(C);
   require forall{ a : a in Coefficients(Equation(C)) |
@@ -235,9 +240,22 @@ intrinsic TwoSelmerGroupTrue(J::JacHyp:checking := false) -> GrpAb,Map,GrpAbElt
   assert Degree(f1) in [5,6];
   if k cmpeq QQ then
     J1 := Jacobian(C1);
-    vprint TwoDescent,1 : "Computing the 2-Selmer group (using Stoll's code)";
-    vtime TwoDescent,1 : bound,dimS2,Sdata,_,S2 := TwoSelmerGroupData(J1);
-    selbasis := Sdata[1];
+    if SelmerAl eq "TwoSelmerGroupData" then
+      vprint TwoDescent,1 : "Computing the 2-Selmer group (using Stoll's code)";
+      vtime TwoDescent,1 : bound,dimS2,Sdata,_,S2 := TwoSelmerGroupData(J1);
+      selbasis := Sdata[1];
+    else
+      require Degree(f1) eq 5 :
+        "TwoSelmerGroupNew requires a degree 5 reduced working model";
+      assert canontriv;
+      vprint TwoDescent,1 : "Computing the 2-Selmer group (using TwoSelmerGroupNew)";
+      vtime TwoDescent,1 : S2,selmap := TwoSelmerGroup(J1:Al := SelmerAl);
+      dimS2 := #Generators(S2);
+      // The New map uses the monic model X = lc(f1)*x, Y = lc(f1)^2*y.
+      lc := Coefficient(f1,5);
+      assert P!Modulus(Codomain(selmap)) eq lc^4*Evaluate(f1,P.1/lc);
+      selbasis := [Evaluate(P!selmap(S2.i),lc*P.1) : i in [1..dimS2]];
+    end if;
     assert dimS2 eq #Generators(S2);
   else
     J1 := Jacobian(BaseChange(C1,k));
@@ -248,7 +266,7 @@ intrinsic TwoSelmerGroupTrue(J::JacHyp:checking := false) -> GrpAb,Map,GrpAbElt
     assert canontriv or (selbasis[dimS2] eq 1);
   end if;
   dimfake := dimS2 - (canontriv select 0 else 1);
-  if k cmpeq QQ and checking then
+  if k cmpeq QQ and SelmerAl eq "TwoSelmerGroupData" and checking then
     assert dimfake eq #Sdata[1] - #Sdata[2] + #Sdata[3];
     fact := [ a[1] : a in Factorization(f) ];
     oddfactor := exists{ a : a in fact | IsOdd(Degree(a)) };    
@@ -396,13 +414,14 @@ function MinRedQuadricIntersection(C,eps:checking:=false)
   return <model[1],[MC(model[2],mon): mon in mons]>;
 end function;
 
-intrinsic TwoDescentGenus2(J::JacHyp) -> GrpAb,Map
-{Computes models (pairs of quadratic forms in 6 variables) representing the non-trivial elements of the 2-Selmer group of the genus 2 Jacobian J. The genus 2 curve must be defined over Q and of the form y^2 = f(x) where f has degree 6.}
+intrinsic TwoDescentGenus2(J::JacHyp:
+    SelmerAl := "TwoSelmerGroupData") -> GrpAb,Map
+{Computes models (pairs of quadratic forms in 6 variables) representing the non-trivial elements of the 2-Selmer group of the genus 2 Jacobian J. The genus 2 curve must be defined over Q and of the form y^2 = f(x) where f has degree 6. SelmerAl is passed to TwoSelmerGroupTrue.}
   C := Curve(J);
   require BaseRing(C) cmpeq QQ : 
     "The genus 2 curve must be defined over the rationals";
   L := Degree6Algebra(C);
-  S2,S2map,c := TwoSelmerGroupTrue(J);
+  S2,S2map,c := TwoSelmerGroupTrue(J:SelmerAl := SelmerAl);
   vprint TwoDescent,1 : "Computing models for the 2-Selmer elements";
   models := [];
   S2elts := [x : x in S2 | x ne S2!0];
